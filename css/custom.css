@@ -1,0 +1,241 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Overwrite default Theme Styles
+-----------------------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.bg-hide-mob {
+		background: none !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.bg-hide-mob {
+		background: none !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.bg-hide-mob {
+		background: none !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.bg-hide-mob {
+		background: none !important;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Basic Layout Styles
+-----------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--textcolor) !important;
+	font-family: var(--font-family-sans-serif);
+}
+
+/* ----------------------------------------------------------------
+	Basic
+-----------------------------------------------------------------*/
+
+::selection {
+	background: var(--themecolor);
+}
+
+a:hover {
+	color: var(--themecolor) !important;
+}
+
+/* Top Links
+-----------------------------------------------------------------*/
+
+.top-links-item>a {
+	color: var(--textcolor) !important;
+}
+
+.slider-title p {
+	color: var(--textcolor) !important;
+}
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+.menu-link {
+	text-transform: uppercase !important;
+	color: var(--textcolor);
+	font-family: var(--font-family-sans-serif);
+}
+
+.menu-item:hover>.menu-link,
+.menu-item.current>.menu-link {
+	color: var(--themecolor) !important;
+}
+
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+
+
+body {
+	color: var(--textcolor);
+	font-family: var(--font-family-sans-serif);
+}
+
+/* Slider Text
+-----------------------------------------------------------------*/
+
+.slider-title h3 {
+	color: var(--textcolor) !important;
+}
+
+/* Badge
+-----------------------------------------------------------------*/
+.badge {
+	padding: 10px !important;
+	font-size: 16px !important;
+}
+
+/* ----------------------------------------------------------------
+	Styled Icons
+-----------------------------------------------------------------*/
+
+.i-plain {
+	color: var(--themecolor);
+}
+
+.i-rounded,
+.i-plain,
+.i-circled,
+.i-bordered,
+.social-icon {
+	cursor: default;
+}
+
+.i-plain:hover {
+	color: var(--textcolor);
+}
+
+.fbox-plain .fbox-icon i,
+.fbox-plain .fbox-icon img {
+	color: var(--themecolor);
+}
+
+/* ----------------------------------------------------------------
+	Buttons
+-----------------------------------------------------------------*/
+
+.button {	
+	background-color: var(--themecolor);
+}
+
+/* Testimonials
+-----------------------------------------------------------------*/
+
+.clients-grid .grid-item::before,
+.testimonials-grid .grid-item::before {
+	border-left: 1px solid #DDD !important;
+}
+
+.clients-grid .grid-item::after,
+.testimonials-grid .grid-item::after {
+	border-bottom: 1px solid #DDD !important;
+}
+
+.testimonial {
+	position: relative;
+	padding: 20px;
+	background-color: #FFF;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.testi-image {
+	float: left;
+	margin-right: 15px;
+}
+
+.testi-image,
+.testi-image a,
+.testi-image img,
+.testi-image i {
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+
+.testi-image i {
+	text-align: center;
+	background-color: #EEE;
+	border-radius: 50%;
+	line-height: 64px;
+	font-size: 28px;
+	color: #888;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+.testi-image img {
+	border-radius: 50%;
+}
+
+.testi-content {
+	position: relative;
+	overflow: hidden;
+}
+
+.testi-content p {
+	font-family: serif;
+	font-size: 1.1rem;
+}
+
+.testi-content p::before {
+	content: '“';
+}
+.testi-content p::after {
+	content: '”';
+}
+
+.testi-meta {
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.testi-meta::before {
+	content: '\2013';
+}
+
+.testi-meta span {
+	display: block;
+	font-weight: normal;
+	color: #999;
+	font-size: 13px;
+	text-transform: none;
+	padding-left: 10px;
+}
+
+/* Portfolio - Item Title
+-----------------------------------------------------------------*/
+
+.portfolio-desc h3 a {
+	color: var(--textcolor);
+}
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+
+#logo-footer {
+	max-width: 175px;
+}
+
