@@ -81,7 +81,7 @@
 							Started</a>
 					</div>
 
-					<div id="primary-menu-trigger">
+					<!--<div id="primary-menu-trigger">
 						<svg class="svg-trigger" viewBox="0 0 100 100">
 							<path
 								d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
@@ -91,11 +91,29 @@
 								d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
 							</path>
 						</svg>
-					</div>
+					</div>-->
 
 					<!-- Primary Navigation
-						============================================= -->
-					<nav class="primary-menu with-arrows">
+					============================================= -->
+
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<div class="navbar-nav">
+								<a class="nav-item nav-link active" href="#">Home <span
+										class="sr-only">(current)</span></a>
+								<a class="nav-item nav-link" href="#">Features</a>
+								<a class="nav-item nav-link" href="#">Pricing</a>
+								<a class="nav-item nav-link disabled" href="#">Disabled</a>
+							</div>
+						</div>
+					</nav>
+
+					<!-- <nav class="primary-menu with-arrows">
 
 						<ul class="menu-container">
 							<li class="menu-item current"><a class="menu-link" href="#">
@@ -115,7 +133,7 @@
 								</a></li>
 						</ul>
 
-					</nav><!-- #primary-menu end -->
+					</nav> --><!-- #primary-menu end -->
 				</div>
 			</div>
 		</div>
@@ -423,47 +441,6 @@
 									<h4 class="mb-3">We Reply Quickly</h4>
 									<div class="form-widget">
 										<div class="form-result"></div>
-										<!--Hidden Netlify Form
-										=================== -->
-
-										<div style="display: none;">
-											<form class="row mb-0" id="template-contactform" name="template-contactform"
-												data-netlify="true" method="post">
-												<div class="col-12 form-group mb-3">
-													<label for="template-contactform-name">Name:*</label>
-													<input type="text" id="template-contactform-name"
-														name="template-contactform-name"
-														class="form-control input-sm required" value="">
-												</div>
-												<div class="col-12 form-group mb-3">
-													<label for="template-contactform-email">Email Address:*</label>
-													<input type="email" id="template-contactform-email"
-														name="template-contactform-email"
-														class="form-control input-sm required" value="">
-												</div>
-												<div class="col-12 form-group mb-3">
-													<label for="template-contactform-email">Phone:*</label>
-													<input type="text" id="template-contactform-phone"
-														name="template-contactform-phone"
-														class="form-control input-sm required" value="">
-												</div>
-												<div class="col-12 form-group mb-4">
-													<label for="template-contactform-website">Message:</label>
-													<textarea rows="2" id="template-contactform-website"
-														name="template-contactform-website"
-														class="form-control input-sm" value=""></textarea>
-												</div>
-												<div class="col-12 form-group mb-0">
-													<button class="button button-rounded btn-block nott ls0 m-0"
-														type="submit" id="template-contactform-submit"
-														name="template-contactform-submit" value="submit">Send</button>
-												</div>
-
-												<input type="hidden" name="prefix" value="template-contactform-">
-											</form><!--End Hidden Netlify Form -->
-										</div>
-
-
 
 										<form class="row mb-0" id="template-contactform" name="template-contactform"
 											data-netlify="true" method="post">
@@ -829,13 +806,13 @@
 
 	<!-- JavaScripts
 	============================================= -->
+
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.min.js"></script>
-	<script src="js/netlify-form.js"></script>
 
 	<!-- Footer Scripts
 		============================================= -->
-	<script defer src="js/functions.js"></script>
+	<!-- <script defer src="js/functions.js"></script> -->
 
 </body>
 
