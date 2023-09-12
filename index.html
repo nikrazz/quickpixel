@@ -423,12 +423,50 @@
 									<h4 class="mb-3">We Reply Quickly</h4>
 									<div class="form-widget">
 										<div class="form-result"></div>
-										<!-- <form class="row mb-0" id="template-contactform" name="template-contactform"
-											action="include/form.php" method="post"> -->
+										<!--Hidden Netlify Form
+										=================== -->
+
+										<div style="display: none;">
+											<form class="row mb-0" id="template-contactform" name="template-contactform"
+												data-netlify="true" method="post">
+												<div class="col-12 form-group mb-3">
+													<label for="template-contactform-name">Name:*</label>
+													<input type="text" id="template-contactform-name"
+														name="template-contactform-name"
+														class="form-control input-sm required" value="">
+												</div>
+												<div class="col-12 form-group mb-3">
+													<label for="template-contactform-email">Email Address:*</label>
+													<input type="email" id="template-contactform-email"
+														name="template-contactform-email"
+														class="form-control input-sm required" value="">
+												</div>
+												<div class="col-12 form-group mb-3">
+													<label for="template-contactform-email">Phone:*</label>
+													<input type="text" id="template-contactform-phone"
+														name="template-contactform-phone"
+														class="form-control input-sm required" value="">
+												</div>
+												<div class="col-12 form-group mb-4">
+													<label for="template-contactform-website">Message:</label>
+													<textarea rows="2" id="template-contactform-website"
+														name="template-contactform-website"
+														class="form-control input-sm" value=""></textarea>
+												</div>
+												<div class="col-12 form-group mb-0">
+													<button class="button button-rounded btn-block nott ls0 m-0"
+														type="submit" id="template-contactform-submit"
+														name="template-contactform-submit" value="submit">Send</button>
+												</div>
+
+												<input type="hidden" name="prefix" value="template-contactform-">
+											</form><!--End Hidden Netlify Form -->
+										</div>
 
 
-										<form class="row mb-0" id="template-contactform" data-netlify="true"
-											method="post" name="contact">
+
+										<form class="row mb-0" id="template-contactform" name="template-contactform"
+											data-netlify="true" method="post">
 											<div class="col-12 form-group mb-3">
 												<label for="template-contactform-name">Name:*</label>
 												<input type="text" id="template-contactform-name"
@@ -791,13 +829,13 @@
 
 	<!-- JavaScripts
 	============================================= -->
-	<!-- <script src="js/jquery.js"></script>
-
-	<script src="js/plugins.min.js"></script> -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="js/netlify-form.js"></script>
 
 	<!-- Footer Scripts
 		============================================= -->
-	<!-- <script defer src="js/functions.js"></script> -->
+	<script defer src="js/functions.js"></script>
 
 </body>
 
