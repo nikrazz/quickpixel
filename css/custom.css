@@ -50,10 +50,6 @@ h6 {
 	background: var(--themecolor);
 }
 
-a:hover {
-	color: var(--themecolor) !important;
-}
-
 /* Top Links
 -----------------------------------------------------------------*/
 
@@ -135,6 +131,10 @@ body {
 
 .button {	
 	background-color: var(--themecolor);
+}
+
+.button:hover {
+	background-color: var(--textcolor);
 }
 
 /* Testimonials
