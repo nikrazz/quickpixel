@@ -241,6 +241,12 @@ body {
 	text-transform: none;
 }
 
+.entry-title h2,
+.entry-title h3,
+.entry-title h4 {
+	letter-spacing: normal !important;
+}
+
 /* ----------------------------------------------------------------
 	Footer
 -----------------------------------------------------------------*/
