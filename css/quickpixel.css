@@ -73,7 +73,6 @@ div.menu-link { cursor: default; }
 .feature-box.fbox-center p {
 	font-size: calc( var(--basefontsize, 16px) - 1px );
 	line-height: 1.7;
-	color: #777;
 	letter-spacing: 0;
 }
 
@@ -206,8 +205,8 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 /* Badge
 -----------------------------------------------------------------*/
 .badge {
-	padding: 8px;
-	font-size: 12px;
+	padding: 10px;
+	font-size: 16px;
 	margin-bottom: 15px;
 	border-radius: 2px;
 	font-weight: 500;
@@ -281,7 +280,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 	#header:not(.sticky-header) #header-wrap .container { box-shadow: var(--headerboxshadow, 0 0 10px 5px rgba(0, 0, 0, 0.05)) }
 
 	.menu-link {
-		text-transform: none;
+		text-transform: uppercase;
 		letter-spacing: 0;
 		font-size: var(--menufontsize, 15px);
 		font-weight: 600;
@@ -321,7 +320,6 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 .slider-title h3 {
 	display: inline-block;
 	font-size: 18px;
-	color: #AAA;
 }
 
 

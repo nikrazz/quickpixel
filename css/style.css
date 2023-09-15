@@ -120,7 +120,7 @@ dl, dt, dd, ol, ul, li {
 }
 
 ::selection {
-	background: #1ABC9C;
+	background: var(--themecolor);
 	color: #FFF;
 	text-shadow: none;
 }
@@ -148,13 +148,13 @@ dl, dt, dd, ol, ul, li {
 
 body {
 	line-height: 1.5;
-	color: #555;
-	font-family: 'Lato', sans-serif;
+	color: var(--textcolor);
+	font-family: var(--font-family-sans-serif);
 }
 
 a {
 	text-decoration: none !important;
-	color: #1ABC9C;
+	color: var(--themecolor);
 }
 
 a:hover { color: #222; }
@@ -181,11 +181,9 @@ h3,
 h4,
 h5,
 h6 {
-	color: #444;
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Poppins', sans-serif;
 }
 
 h5,
@@ -2877,7 +2875,7 @@ html[xmlns] .slider-wrap {
 	line-height: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #666;
+	color: var(--textcolor);
 }
 
 .top-links-item > a > i { vertical-align: top; }
@@ -3559,12 +3557,11 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	display: block;
 	line-height: 22px;
 	padding: 14px 5px;
-	color: #444;
+	color: var(--textcolor);
 	font-weight: 700;
 	font-size: 0.8125rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
 }
 
 .menu-link span {
@@ -3583,7 +3580,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 
 .menu-item:hover > .menu-link,
 .menu-item.current > .menu-link {
-	color: #1ABC9C;
+	color: var(--themecolor);
 }
 
 .menu-item.sub-menu > .menu-link > div { }
@@ -6349,8 +6346,6 @@ body:not(.has-plugin-html5video) .video-wrap video {
 #page-title {
 	position: relative;
 	padding: 4rem 0;
-	background-color: #F5F5F5;
-	border-bottom: 1px solid #EEE;
 }
 
 #page-title .container {
@@ -6362,10 +6357,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 	margin: 0;
 	line-height: 1;
 	font-weight: 600;
-	letter-spacing: 1px;
-	color: #333;
 	font-size: 2rem;
-	text-transform: uppercase;
 }
 
 #page-title span {
@@ -6870,7 +6862,7 @@ body:not(.device-touch) .portfolio {
 }
 
 .portfolio-desc h3 a {
-	color: #222;
+	color: var(--textcolor);
 }
 
 .portfolio-desc h3 a:hover {
@@ -7480,8 +7472,6 @@ body:not(.device-touch) .portfolio {
 	margin: 0;
 	font-size: 1.5rem;
 	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 }
 
 .entry-title.title-sm h2,
@@ -8794,7 +8784,7 @@ td.actions {
 	padding: 8px 22px;
 	font-size: 0.875rem;
 	line-height: 24px;
-	background-color: #1ABC9C;
+	background-color: var(--themecolor);
 	color: #FFF;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -8820,7 +8810,7 @@ body:not(.device-touch) .button {
 }
 
 .button:hover {
-	background-color: #444;
+	background-color: var(--textcolor);
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -9767,7 +9757,7 @@ body:not(.device-touch) .button.button-full strong {
 .fbox-plain .fbox-icon img {
 	border: none;
 	background-color: transparent !important;
-	color: #1ABC9C;
+	color: var(--themecolor);
 	border-radius: 0;
 }
 
@@ -10257,7 +10247,7 @@ body:not(.device-touch) .button.button-full strong {
 	font-size: 28px;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-	cursor: pointer;
+	cursor: default;
 	font-style: normal;
 }
 
@@ -10294,11 +10284,11 @@ body:not(.device-touch) .social-icon {
 	height: 36px !important;
 	font-size: 28px;
 	line-height: 36px !important;
-	color: #444;
+	color: var(--themecolor);
 	text-shadow: 1px 1px 1px #FFF;
 }
 
-.i-plain:hover { color: #777; }
+.i-plain:hover { color: var(--textcolor); }
 
 .i-circled { border-radius: 50%; }
 
@@ -11579,7 +11569,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 	height: 100%;
 	top: 0;
 	left: -1px;
-	border-left: 1px dashed #DDD;
+	border-left: 1px solid #DDD;
 }
 
 .clients-grid .grid-item::after,
@@ -11589,7 +11579,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 	top: auto;
 	left: 0;
 	bottom: -1px;
-	border-bottom: 1px dashed #DDD;
+	border-bottom: 1px solid #DDD;
 }
 
 
@@ -11657,12 +11647,17 @@ body:not(.device-touch) .clients-grid .grid-item a {
 
 .testi-content p {
 	margin-bottom: 0;
-	font-family: 'PT Serif', serif;
 	font-style: italic;
+	font-size: 1.1rem;
 }
 
-.testi-content p::before,
-.testi-content p::after { content: '"'; }
+.testi-content p::before {
+	content: '“';
+}
+
+.testi-content p::after { 
+	content: '”';
+}
 
 .testi-meta {
 	margin-top: 10px;
