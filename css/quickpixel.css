@@ -225,9 +225,17 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 	margin-bottom: 13px;
 }
 
-.entry .entry-title h3 a { color: #222 !important }
+.entry .entry-title h3 a { 
+	color: var(--textcolor);
+}
 
-.entry-meta li::before { content: "\00b7"; }
+.entry-meta li::before { 
+	content: "\00b7"; 
+}
+
+.entry-content ul {
+	margin-left: 40px;
+}
 
 /* Footer
 -----------------------------------------------------------------*/
