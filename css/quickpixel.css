@@ -276,6 +276,10 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 	background-image: url('images/hero/hero-3.svg');
 }
 
+#footer .container {
+	margin-top: 180px;
+}
+
 
 /* Responsive Device more than 992px (.device-md >)
 -----------------------------------------------------------------*/
