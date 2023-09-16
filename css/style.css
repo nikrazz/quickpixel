@@ -6242,10 +6242,11 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 #page-title h1 {
 	padding: 0;
-	margin: 0;
+	margin: 160px 0 0 0;
 	line-height: 1;
 	font-weight: 600;
 	font-size: 2rem;
+	text-align: center;
 }
 
 #page-title span {
@@ -6462,7 +6463,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 .content-wrap {
 	position: relative;
-	padding: 80px 0;
+	padding: 40px 0;
 	overflow: hidden;
 }
 
