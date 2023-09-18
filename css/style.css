@@ -1,11 +1,11 @@
 /*-----------------------------------------------------------------------------------
 
-	Theme Name: Canvas
-	Theme URI: http://themes.semicolonweb.com/html/canvas
-	Description: The Multi-Purpose Template
-	Author: SemiColonWeb
-	Author URI: http://themeforest.net/user/semicolonweb
-	Version: 6.1.4
+	Theme Name: Quick Pixel
+	Theme URI: https://quickpixel.com.au
+	Description: Responsive Template for Static Website
+	Author: Quick Pixel
+	Author URI: https://quickpixel.com.au
+	Version: 1.0
 
 -----------------------------------------------------------------------------------*/
 
@@ -189,9 +189,9 @@ h6 {
 h5,
 h6 { margin-bottom: 20px; }
 
-h1 { font-size: 36px; }
+h1 { font-size: 32px; }
 
-h2 { font-size: 30px; }
+h2 { font-size: 26px; }
 
 h3 { font-size: 1.5rem; }
 
@@ -6233,7 +6233,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 #page-title {
 	position: relative;
-	padding: 4rem 0;
+	padding: 2rem 0;
 }
 
 #page-title .container {
@@ -9425,6 +9425,7 @@ body:not(.device-touch) .button.button-full strong {
 	flex-grow: 1;
 	min-width: 0;
 	max-width: 100%;
+	min-height: 120px;
 	padding: 0 0.75rem;
 }
 
@@ -9440,7 +9441,7 @@ body:not(.device-touch) .button.button-full strong {
 .fbox-content p {
 	margin-top: 0.5rem;
 	margin-bottom: 0px;
-	color: #999;
+	font-weight: 300;
 }
 
 .fbox-content .before-heading {
@@ -9593,15 +9594,16 @@ body:not(.device-touch) .button.button-full strong {
 -----------------------------------------------------------------*/
 
 .fbox-border .fbox-icon a {
-	border: 1px solid #1ABC9C;
+	border: 1px solid var(--themecolor);
 	border-radius: 50%;
 }
 
 .fbox-border .fbox-icon i,
 .fbox-border .fbox-icon img {
-	border: none;
 	background-color: transparent !important;
-	color: #1ABC9C;
+	border: 1px solid var(--themecolor);
+	color: var(--themecolor);
+	border-radius: 50%;
 }
 
 
@@ -9731,7 +9733,7 @@ body:not(.device-touch) .button.button-full strong {
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0 2rem 2rem;
-	border: 1px solid #E5E5E5;
+	border: 1px solid var(--themecolor);
 	border-radius: 5px;
 }
 
@@ -13074,7 +13076,9 @@ h3.titular-title { font-size: 2rem; }
 /* Heading Block - with Subtitle
 -----------------------------------------------------------------*/
 
-.heading-block { margin-bottom: 50px; }
+.heading-block {
+	margin-bottom: 30px; 
+}
 
 .heading-block h1,
 .heading-block h2,
@@ -13110,7 +13114,6 @@ h3.titular-title { font-size: 2rem; }
 	display: block;
 	margin-top: 10px;
 	font-weight: 300;
-	color: #777;
 }
 
 .heading-block .before-heading { margin-bottom: 7px; }
