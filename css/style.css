@@ -9425,7 +9425,6 @@ body:not(.device-touch) .button.button-full strong {
 	flex-grow: 1;
 	min-width: 0;
 	max-width: 100%;
-	min-height: 120px;
 	padding: 0 0.75rem;
 }
 
@@ -9468,6 +9467,10 @@ body:not(.device-touch) .button.button-full strong {
 
 .fbox-content-lg .before-heading {
 	font-size: 1rem;
+}
+
+.feature-box.feature-box-services {
+	min-height: 200px;
 }
 
 
