@@ -11551,7 +11551,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 .testi-meta span {
 	display: block;
 	font-weight: normal;
-	color: #999;
+	color: var(--subheadingcolor);
 	font-size: 13px;
 	text-transform: none;
 	padding-left: 10px;
@@ -11829,7 +11829,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 .pricing-price {
 	position: relative;
 	padding: 1.5rem 0;
-	color: #333;
+	color: var(--textcolor);
 	font-size: 4rem;
 	line-height: 1;
 }
@@ -12890,11 +12890,10 @@ fieldset[disabled] .sm-form-control {
 label {
 	display: inline-block;
 	font-size: 13px;
-	font-weight: 700;
-	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #555;
+	color: var(--textcolor);
 	margin-bottom: 10px;
 	cursor: pointer;
 }
@@ -13087,7 +13086,6 @@ h3.titular-title { font-size: 2rem; }
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #333;
 }
 
 .emphasis-title h1,
@@ -13276,7 +13274,7 @@ h3.titular-title { font-size: 2rem; }
 	font-family: 'PT Serif', serif;
 	font-style: italic;
 	font-weight: 400;
-	color: #999;
+	color: var(--subheadingcolor);
 }
 
 
@@ -13970,7 +13968,7 @@ button.toast-close-button {
 .copyright-links a {
 	display: inline-block;
 	margin: 0 3px;
-	color: #333;
+	color: var(--subheadingcolor);
 	border-bottom: 1px dotted #444;
 }
 

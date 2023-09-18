@@ -11,6 +11,7 @@
 	--headerboxshadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
 	--menufontsize: 15px;
 	--textcolor: #01303F;
+	--subheadingcolor: #5D7A84;
 }
 
 @media (min-width: 992px) {
@@ -108,24 +109,20 @@ div.menu-link { cursor: default; }
 
 #oc-clients .oc-item img { height: 32px; }
 
-/* Pricing Switcher
+/* Form
 -----------------------------------------------------------------*/
-input.switch-toggle-round + label::before,
-input.switch-toggle-round + label {
-	border-radius: 4px;
-	background-color: var(--themecolor, #fE9603);
+
+.card {
+  border: 1px solid rgba(1, 48, 63, 0.125);
 }
 
-.price-discount {
-	position: relative;
-	top: -12px;
-	margin-left: 10px;
-	background: url('images/icons/discount.svg') no-repeat 0 0;
-	width: 60px;
-	height: 39px;
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(1, 48, 63, 0.075) !important;
 }
 
-input.switch-toggle-round + label::after { border-radius: 4px }
+.form-control {
+  color: var(--textcolor);
+}
 
 /* Pricing Boxes
 -----------------------------------------------------------------*/
@@ -137,7 +134,6 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 	box-shadow: none;
 	margin-right: -1px;
 }
-
 
 /* Pricing Boxes - Title
 -----------------------------------------------------------------*/
@@ -151,7 +147,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 	margin: 0;
 	font-size: 21px;
 	letter-spacing: 0;
-	color: #555;
+	color: var(--subheadingcolor);
 	text-transform: none;
 }
 
@@ -173,7 +169,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 .pricing-price span.price-tenure {
 	display: block;
 	font-weight: normal;
-	color: gray;
+	color: var(--subheadingcolor);
 	text-transform: lowercase;
 }
 
