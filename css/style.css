@@ -245,7 +245,7 @@ table,
 fieldset,
 form { margin-bottom: 10px; }
 
-small { font-family: 'Lato', sans-serif; }
+small { font-family: var(--font-family-sans-serif) }
 
 
 @media (max-width: 1200px) {
@@ -394,11 +394,11 @@ span.middot {
 
 .nolineheight { line-height: 0 !important; }
 
-.font-body { font-family: 'Lato', sans-serif; }
+.font-body { font-family: var(--font-family-sans-serif) }
 
-.font-primary { font-family: 'Poppins', sans-serif; }
+.font-primary { font-family: var(--font-family-sans-serif) }
 
-.font-secondary { font-family: 'PT Serif', serif; }
+.font-secondary { font-family: var(--font-family-sans-serif) }
 
 .font-weight-extralight {
 	font-weight: 100 !important;
@@ -3224,7 +3224,6 @@ html[xmlns] .slider-wrap {
 
 #logo a {
 	color: #000;
-	font-family: 'Poppins', sans-serif;
 	font-size: 36px;
 }
 
@@ -3481,7 +3480,6 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	font-weight: 400;
 	color: #666;
 	letter-spacing: 0;
-	font-family: 'Lato', sans-serif;
 }
 
 .sub-menu-container .menu-item:hover > .menu-link {
@@ -3929,7 +3927,6 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	.mega-menu-style-2 .mega-menu-title > .menu-link {
 		font-size: 0.8125rem;
 		font-weight: 700;
-		font-family: 'Poppins', sans-serif;
 		letter-spacing: 1px;
 		text-transform: uppercase !important;
 		margin-bottom: 15px;
@@ -4677,7 +4674,6 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	color: #333;
 	font-weight: 700;
 	margin-top: 0 !important;
-	font-family: 'Poppins', sans-serif;
 	letter-spacing: 2px;
 }
 
@@ -6755,7 +6751,7 @@ body:not(.device-touch) .portfolio {
 }
 
 .portfolio-desc h3 a:hover {
-	color: #1ABC9C;
+	color: var(--themecolor);
 }
 
 .portfolio-desc span {
@@ -7344,7 +7340,7 @@ body:not(.device-touch) .portfolio {
 .entry-title h3,
 .entry-title h4 {
 	margin: 0;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 600;
 }
 
@@ -7381,12 +7377,13 @@ body:not(.device-touch) .portfolio {
 
 .entry-title h2 a:hover,
 .entry-title h3 a:hover,
-.entry-title h4 a:hover { color: #1ABC9C; }
+.entry-title h4 a:hover { color: var(--themecolor) }
 
 .entry-meta {
 	position: relative;
 	overflow: hidden;
 	margin-top: 10px;
+	color: var(--subheadingcolor);
 }
 
 .posts-sm .entry-meta {
@@ -7423,7 +7420,7 @@ body:not(.device-touch) .portfolio {
 .entry-meta li {
 	font-size: 90%;
 	margin: 0 15px 10px 0;
-	color: #999;
+	color: var(--subheadingcolor);
 }
 
 .entry-meta ul.flex-column li {
@@ -7477,7 +7474,6 @@ body:not(.device-touch) .portfolio {
 	padding: 30px 0;
 	text-align: center;
 	color: #444;
-	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1.5rem;
@@ -7500,7 +7496,6 @@ body:not(.device-touch) .entry-link {
 .entry-link span {
 	display: block;
 	margin-top: 5px;
-	font-family: 'PT Serif', serif;
 	font-style: italic;
 	font-weight: normal;
 	text-transform: none;
@@ -7513,7 +7508,6 @@ body:not(.device-touch) .entry-link {
 
 .entry blockquote p {
 	font-weight: 400;
-	font-family: 'PT Serif', serif;
 	font-style: italic;
 }
 
@@ -7654,7 +7648,6 @@ body:not(.device-touch) .entry-link {
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -7703,9 +7696,8 @@ body:not(.device-touch) .entry-link {
 
 .more-link {
 	display: inline-block;
-	border-bottom: 1px solid #1ABC9C;
+	border-bottom: none;
 	padding: 0 2px;
-	font-family: 'PT Serif', serif;
 	font-style: italic;
 }
 
@@ -7856,7 +7848,6 @@ body:not(.device-touch) .entry-link {
 .comment-content .comment-author span a {
 	font-size: 12px;
 	font-weight: normal;
-	font-family: 'PT Serif', serif;
 	font-style: italic;
 	color: #AAA;
 }
@@ -7966,7 +7957,7 @@ div.alignright {
 .wp-caption {
 	text-align: center;
 	margin: 10px 20px 13px 20px;
-	font-family: 'Lato', Georgia, "Times New Roman", Times, serif;
+	font-family: serif;
 	font-style: italic;
 }
 
@@ -8722,7 +8713,6 @@ body:not(.device-touch) .button {
 	font-size: 1.25rem;
 	height: auto;
 	line-height: 1;
-	font-family: 'Poppins', sans-serif;
 }
 
 .button.button-desc span {
@@ -8731,7 +8721,6 @@ body:not(.device-touch) .button {
 	font-size: 0.875rem;
 	font-weight: 400;
 	letter-spacing: 1px;
-	font-family: 'PT Serif', serif;
 	font-style: italic;
 	text-transform: none;
 }
@@ -9431,7 +9420,6 @@ body:not(.device-touch) .button.button-full strong {
 .fbox-content h3 {
 	font-size: 1rem;
 	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 0;
 	color: #333;
@@ -9724,7 +9712,6 @@ body:not(.device-touch) .button.button-full strong {
 
 .fbox-center.fbox-italic p {
 	font-style: italic;
-	font-family: 'Lato', sans-serif;
 }
 
 
@@ -11102,7 +11089,6 @@ body:not(.device-touch) .social-icon i {
 .tab-nav-lg li a {
 	display: inline-block;
 	color: #444;
-	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -11727,7 +11713,6 @@ body:not(.device-touch) .clients-grid .grid-item a {
 	display: block;
 	color: var(--themecolor);
 	font-weight: 400;
-	font-family: 'PT Serif', serif;
 	font-style: italic;
 	font-size: 1rem;
 	margin-top: 5px;
@@ -11999,7 +11984,6 @@ body:not(.device-touch) .clients-grid .grid-item a {
 .counter {
 	font-size: 42px;
 	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
 }
 
 .counter.counter-small { font-size: 28px; }
@@ -12128,7 +12112,6 @@ body:not(.device-touch) .rounded-skill {
 
 .skills li .progress-percent .counter {
 	font-weight: 400;
-	font-family: 'Lato', sans-serif;
 }
 
 .progress-percent::after, .progress-percent::before {
@@ -13276,7 +13259,6 @@ h3.titular-title { font-size: 2rem; }
 	display: block;
 	margin: 0 0 5px;
 	font-size: 1rem;
-	font-family: 'PT Serif', serif;
 	font-style: italic;
 	font-weight: 400;
 	color: var(--subheadingcolor);
@@ -14337,7 +14319,6 @@ body:not(.device-touch) .tagcloud a {
 .widget-filter-links li a {
 	display: block;
 	color: #444;
-	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 }
 
@@ -14392,7 +14373,6 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 2px;
-	font-family: 'Poppins', sans-serif;
 }
 
 .nav-tree li i {
@@ -14425,7 +14405,6 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 12px;
 	padding: 6px 0;
 	letter-spacing: 1px;
-	font-family: 'Lato', sans-serif;
 }
 
 .nav-tree ul ul a i.icon-angle-down { font-size: 12px; }
@@ -14472,14 +14451,13 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 56px;
 	font-weight: 400;
 	font-style: italic;
-	font-family: 'PT Serif', serif;
 	text-transform: none;
 }
 
 .wedding-head .and {
 	margin: 0;
 	font-size: 200px;
-	font-family: 'Times New Roman', serif;
+	font-family: serif;
 }
 
 
