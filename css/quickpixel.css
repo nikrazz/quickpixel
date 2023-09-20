@@ -229,7 +229,8 @@ div.menu-link { cursor: default; }
 	content: "\00b7"; 
 }
 
-.entry-content ul {
+.entry-content ul,
+.team-content ol {
 	margin-left: 40px;
 }
 
@@ -423,3 +424,4 @@ div.menu-link { cursor: default; }
 	background-size: cover;
 	background-position: 50% 50%;
 }
+                                

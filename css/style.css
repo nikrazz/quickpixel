@@ -11725,7 +11725,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 
 .team-title span {
 	display: block;
-	color: #1ABC9C;
+	color: var(--themecolor);
 	font-weight: 400;
 	font-family: 'PT Serif', serif;
 	font-style: italic;
@@ -11735,7 +11735,6 @@ body:not(.device-touch) .clients-grid .grid-item a {
 
 .team-content {
 	margin-top: 1rem;
-	color: #777;
 }
 
 .team-content p:last-child { margin-bottom: 0; }
