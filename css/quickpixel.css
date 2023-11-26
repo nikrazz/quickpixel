@@ -434,4 +434,42 @@ div.menu-link { cursor: default; }
 	border-radius: 10px;
 	padding: 15px;
 }
+
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Overwrite default Theme Styles
+-----------------------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.bg-hide-mob {
+		background: none !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.bg-hide-mob {
+		background: none !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.bg-hide-mob {
+		background: none !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.bg-hide-mob {
+		background: none !important;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+
+#logo-footer {
+	max-width: 175px;
+}
                                 
